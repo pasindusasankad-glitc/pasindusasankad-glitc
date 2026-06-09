@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       PORTFOLIO — Pasindu Sasanka
+       Environmental Scientist | Laboratory Investigator | Bilingual Translator
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pasindu Sasanka — Environmental Scientist, Laboratory Investigator & Bilingual Translator. Explore my portfolio showcasing expertise in Environmental Impact Assessment, Advanced Chemistry, and Biological Field Research." />
+  <meta name="keywords" content="Pasindu Sasanka, Environmental Scientist, Laboratory Investigator, Bilingual Translator, Portfolio" />
+  <meta name="author" content="Pasindu Sasanka" />
+
+  <title>Pasindu Sasanka — Environmental Scientist & Researcher</title>
+
+  <!-- Google Fonts — Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVIGATION
+       ============================================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <!-- Logo -->
+      <a href="#hero" class="logo">
+        PS<span class="dot"></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#extracurricular">Extracurricular</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Hamburger Menu (Mobile) -->
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+
+  <!-- ============================================================
+       SECTION 1: HERO
+       ============================================================ -->
+  <section class="hero section-padding" id="hero">
+    <div class="container">
+      <!-- Left: Hero Text -->
+      <div class="hero-content">
+        <!-- Badge -->
+        <div class="hero-badge reveal">
+          <span class="pulse"></span>
+          Available for Opportunities
+        </div>
+
+        <!-- Name -->
+        <h1 class="hero-name reveal reveal-delay-1">
+          Pasindu<br /><span class="accent">Sasanka</span>
+        </h1>
+
+        <!-- Subtitle with typing effect -->
+        <p class="hero-subtitle reveal reveal-delay-2">
+          <span id="typingText">Environmental Scientist</span><span class="typing-cursor" style="border-right: 2px solid var(--color-accent); margin-left: 2px; animation: blink 0.8s infinite;">&nbsp;</span>
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-buttons reveal reveal-delay-3">
+          <a href="#contact" class="btn btn-primary" id="hero-cta-contact">
+            <!-- Mail icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Contact Me
+          </a>
+          <a href="#" class="btn btn-secondary" id="hero-cta-resume">
+            <!-- Download icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            View Resume
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero-stats reveal reveal-delay-4">
+          <div class="stat-item">
+            <div class="stat-number">BSc</div>
+            <div class="stat-label">Biological Sciences</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Projects Done</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Hero Image -->
+      <div class="hero-image reveal reveal-delay-2">
+        <div class="hero-image-wrapper">
+          <img src="profile.jpg" alt="Pasindu Sasanka — Environmental Scientist" />
+
+          <!-- Floating decorative cards -->
+          <div class="float-card float-card-1">
+            <div class="icon green">🔬</div>
+            <span>Lab Investigator</span>
+          </div>
+          <div class="float-card float-card-2">
+            <div class="icon blue">🌍</div>
+            <span>Eco Researcher</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blink cursor animation -->
+  <style>
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+  </style>
+
+
+  <!-- ============================================================
+       SECTION 2: ABOUT ME
+       ============================================================ -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <!-- Left: Illustration -->
+      <div class="about-image reveal">
+        <img src="about-illustration.png" alt="Nature ecosystem illustration" />
+        <div class="about-image-accent"></div>
+      </div>
+
+      <!-- Right: Text content -->
+      <div class="about-content">
+        <h2 class="section-title reveal">About Me</h2>
+        <p class="about-text reveal reveal-delay-1">
+          I am a versatile and analytical <strong>Undergraduate</strong> pursuing a <strong>Bachelor of Science (Biological Sciences)</strong> at the Faculty of Applied Science, Rajarata University of Sri Lanka.
+        </p>
+        <p class="about-text reveal reveal-delay-2">
+          With a diverse background covering <strong>Environmental Impact Assessment</strong>, <strong>Advanced Chemistry</strong>, and <strong>Biological Field Research</strong>, I am a strong communicator skilled in <strong>technical report writing</strong> and <strong>bilingual scientific translation</strong>. I am deeply committed to applying evidence-based solutions to environmental and scientific challenges.
+        </p>
+
+        <!-- Info grid -->
+        <div class="about-info-grid reveal reveal-delay-3">
+          <div class="about-info-item">
+            <div class="icon-wrap">
+              <!-- Location icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="label">Location</div>
+              <div class="value">Sri Lanka</div>
+            </div>
+          </div>
+          <div class="about-info-item">
+            <div class="icon-wrap">
+              <!-- Graduation cap icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/>
+              </svg>
+            </div>
+            <div>
+              <div class="label">Degree</div>
+              <div class="value">BSc (Biological Sciences)</div>
+            </div>
+          </div>
+          <div class="about-info-item">
+            <div class="icon-wrap">
+              <!-- Language icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="label">Languages</div>
+              <div class="value">English</div>
+            </div>
+          </div>
+          <div class="about-info-item">
+            <div class="icon-wrap">
+              <!-- Briefcase icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+            <div>
+              <div class="label">Role</div>
+              <div class="value">Undergraduate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 3: SKILLS
+       ============================================================ -->
+  <section class="skills section-padding" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">Skills & Expertise</h2>
+      <p class="section-subtitle reveal reveal-delay-1">
+        A multidisciplinary skill set built through academic study, field research, and professional experience.
+      </p>
+
+      <div class="skills-grid">
+        <!-- Skill 1 -->
+        <div class="skill-card reveal reveal-delay-1" id="skill-project-coordination">
+          <div class="skill-icon">
+            <!-- Clipboard icon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+              <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+              <line x1="9" y1="12" x2="15" y2="12"/>
+              <line x1="9" y1="16" x2="15" y2="16"/>
+            </svg>
+          </div>
+          <h3>Project Coordination</h3>
+          <p>Planning, organizing, and overseeing multi-departmental research projects from inception to completion.</p>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card reveal reveal-delay-2" id="skill-biostatistics">
+          <div class="skill-icon">
+            <!-- Bar chart icon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"/>
+              <line x1="12" y1="20" x2="12" y2="4"/>
+              <line x1="6" y1="20" x2="6" y2="14"/>
+              <line x1="2" y1="20" x2="22" y2="20"/>
+            </svg>
+          </div>
+          <h3>Biostatistics & Data Modeling</h3>
+          <p>Applying statistical methods and data analysis techniques to biological and environmental research datasets.</p>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card reveal reveal-delay-3" id="skill-field-research">
+          <div class="skill-icon">
+            <!-- Compass icon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+            </svg>
+          </div>
+          <h3>Field Research & Ecosystem Assessment</h3>
+          <p>Conducting biodiversity surveys, habitat assessments, and ecological fieldwork in diverse environments.</p>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card reveal reveal-delay-4" id="skill-environmental-management">
+          <div class="skill-icon">
+            <!-- Leaf icon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75"/>
+            </svg>
+          </div>
+          <h3>Environmental Management & Policy</h3>
+          <p>Understanding regulatory frameworks and applying environmental policies to real-world scenarios.</p>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-card reveal reveal-delay-5" id="skill-technical-writing">
+          <div class="skill-icon">
+            <!-- Edit/Pen icon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20h9"/>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+            </svg>
+          </div>
+          <h3>Technical Writing</h3>
+          <p>Crafting clear, precise technical reports, research papers, and bilingual scientific translations.</p>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-card reveal reveal-delay-6" id="skill-wildlife-conservation">
+          <div class="skill-icon">
+            <!-- Eye icon (observation) -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </div>
+          <h3>Wildlife Conservation & Zoology</h3>
+          <p>Studying animal behavior, habitat conservation, and species diversity through rigorous field observation.</p>
+        </div>
+
+        <!-- Skill 7 -->
+        <div class="skill-card reveal reveal-delay-7" id="skill-leadership">
+          <div class="skill-icon">
+            <!-- Users icon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Leadership</h3>
+          <p>Leading teams, managing cross-departmental workflows, and driving initiatives with strong communication skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 4: EXPERIENCE & LEADERSHIP
+       ============================================================ -->
+  <section class="experience section-padding" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Experience & Leadership</h2>
+      <p class="section-subtitle reveal reveal-delay-1">
+        Professional roles and leadership positions that have shaped my career in environmental science.
+      </p>
+
+      <div class="timeline">
+        <!-- Timeline Item 1: Project Lead -->
+        <div class="timeline-item reveal reveal-delay-1" id="exp-project-lead">
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              Research Project
+            </span>
+            <h3>Project Lead — Ecological Field Research</h3>
+            <div class="role">Mihintale Sanctuary, Sri Lanka</div>
+            <p>
+              Led a comprehensive research project focusing on the <strong>variation in species diversity and 
+              habitat partitioning of dragonflies</strong> in selected areas of the Mihintale Sanctuary, as well as 
+              the <strong>behavioral patterns of peacocks</strong>. Acted as team leader, managing the distribution 
+              of tasks across departments and facilitating communication among team members to meet tight deadlines. 
+              Coordinated fieldwork logistics, data collection protocols, and ensured research integrity throughout 
+              the project lifecycle.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2: Leadership -->
+        <div class="timeline-item reveal reveal-delay-2" id="exp-zeroplastic">
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              2025 — 2026
+            </span>
+            <h3>Board of Directors — ZeroPlastic Team</h3>
+            <div class="role">Rajarata University of Sri Lanka</div>
+            <p>
+              Serving as a <strong>Member of the Board of Directors</strong> for the Rajarata University ZeroPlastic 
+              team. Responsible for <strong>event management, logistics, and operations</strong>, driving campus-wide 
+              sustainability campaigns and coordinating volunteer efforts for environmental awareness programs. 
+              Contributing to strategic planning and organizational growth of the team.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3: Work Experience -->
+        <div class="timeline-item reveal reveal-delay-3" id="exp-john-keells">
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              2021 — 2022
+            </span>
+            <h3>Store Supervisor</h3>
+            <div class="role">John Keells Holdings PLC — Ratmalana Branch</div>
+            <p>
+              Managed daily store operations at the Ratmalana branch, overseeing inventory management, staff 
+              coordination, and customer service. Developed strong organizational and leadership skills in a 
+              fast-paced retail environment, ensuring smooth operations and meeting performance targets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 5: EDUCATION
+       ============================================================ -->
+  <section class="education section-padding" id="education">
+    <div class="container">
+      <h2 class="section-title reveal">Education</h2>
+      <p class="section-subtitle reveal reveal-delay-1">
+        Academic journey from school to university, building a strong foundation in the sciences.
+      </p>
+
+      <div class="education-grid">
+        <!-- University -->
+        <div class="education-card reveal reveal-delay-1" id="edu-university">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-level">University Degree</div>
+          <h3>Bachelor of Science (Biological Sciences)</h3>
+          <div class="edu-institution">Rajarata University of Sri Lanka — Faculty of Applied Sciences</div>
+          <div class="edu-year">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            20/21 Batch • Expected Graduation: December 2026
+          </div>
+        </div>
+
+        <!-- Advanced Level -->
+        <div class="education-card reveal reveal-delay-2" id="edu-advanced-level">
+          <div class="edu-icon">📚</div>
+          <div class="edu-level">GCE Advanced Level</div>
+          <h3>Science Stream</h3>
+          <div class="edu-institution">Science College, Mount Lavinia</div>
+          <div class="edu-year">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            2016 — 2018
+          </div>
+          <div class="edu-result">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            A/L 2020 — C C C
+          </div>
+        </div>
+
+        <!-- Ordinary Level -->
+        <div class="education-card reveal reveal-delay-3" id="edu-ordinary-level">
+          <div class="edu-icon">🏫</div>
+          <div class="edu-level">GCE Ordinary Level</div>
+          <h3>General Education</h3>
+          <div class="edu-institution">De/ Soysa Maha Vidyalaya, Moratuwa</div>
+          <div class="edu-year">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            2005 — 2015
+          </div>
+          <div class="edu-result">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            O/L 2015 — 2A 7C
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 6: EXTRA CURRICULAR
+       ============================================================ -->
+  <section class="extracurricular section-padding" id="extracurricular">
+    <div class="container">
+      <h2 class="section-title reveal">Extra-Curricular Activities</h2>
+      <p class="section-subtitle reveal reveal-delay-1">
+        Active participation in sports, university tournaments, and campus life.
+      </p>
+
+      <div class="extracurricular-grid">
+        <!-- Activity 1 -->
+        <div class="extracurricular-card reveal reveal-delay-1" id="act-carrom">
+          <div class="act-icon">🏆</div>
+          <div class="act-badge">2023</div>
+          <h3>Carrom Tournament Champion</h3>
+          <div class="act-institution">Rajarata University of Sri Lanka</div>
+          <p>
+            Member of the university Carrom team and crowned Champion at the Faculty Board Tournament (2023), 
+            demonstrating focus, dedication, and strategic sportsmanship.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 7: CONTACT & FOOTER
+       ============================================================ -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <!-- Left: Contact Info -->
+      <div class="contact-info">
+        <h2 class="section-title reveal">Let's Connect</h2>
+        <p class="contact-info-text reveal reveal-delay-1">
+          I'm always interested in new opportunities, collaborations, and conversations about environmental science 
+          and research. Feel free to reach out!
+        </p>
+
+        <div class="contact-details reveal reveal-delay-2">
+          <!-- Email -->
+          <div class="contact-detail-item">
+            <div class="icon-circle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="detail-label">Email</div>
+              <div class="detail-value">Pasindusasanka.d@gmail.com</div>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-detail-item">
+            <div class="icon-circle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="detail-label">Phone</div>
+              <div class="detail-value">+94 74 190 4539</div>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="contact-detail-item">
+            <div class="icon-circle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="detail-label">Location</div>
+              <div class="detail-value">Sri Lanka</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links reveal reveal-delay-3">
+          <!-- LinkedIn -->
+          <a href="#" class="social-link" id="social-linkedin" aria-label="LinkedIn" title="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <!-- GitHub -->
+          <a href="#" class="social-link" id="social-github" aria-label="GitHub" title="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="contact-form-wrapper reveal reveal-delay-2">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Your Email</label>
+              <input type="email" id="contactEmail" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" name="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" id="contactSubmitBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-logo">PS<span style="color: var(--color-accent-light);">.</span></div>
+      <p class="footer-text">&copy; 2026 Pasindu Sasanka. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#extracurricular">Extracurricular</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       BACK TO TOP BUTTON
+       ============================================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
